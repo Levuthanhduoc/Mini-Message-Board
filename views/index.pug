@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+    h1= title
+    p Welcome to #{title}
+    each item in message 
+        div text #{item.text}
+        div user #{item.user}
+        div date #{item.added}
+        br
+    a(href= `${"/new"}`) ADD+

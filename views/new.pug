@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+    p Add New
+    form(action="/new" method='POST') 
+        p name :
+            input(type="text" name = "name" value = '' placeholder="You name")
+        p text :
+            input(type="text" name ="text" value ='' placeholder = "blank")
+        input(type="submit" value = "submit")
